@@ -1,0 +1,7 @@
+#main div {
+  width: 110px;
+  height: 110px;
+  background-color: orange;
+  border: solid;
+  display: inline-block;
+}
