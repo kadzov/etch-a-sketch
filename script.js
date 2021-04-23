@@ -1,6 +1,6 @@
 start();
 function start() {
-  let size = prompt('How many squares?');
+  const size = prompt('How many squares?');
   if (size > 100) {
     size = 100;
   }
@@ -12,7 +12,7 @@ function start() {
   }
   main.addEventListener('mouseover', e => {
     if (e.target.hasAttribute('style')) {
-      let value = e.target.getAttribute('style')
+      const value = e.target.getAttribute('style')
         .match(/(?<=brightness\()\d\.?\d?/) - 0.1;
       e.target.style.filter = `brightness(${value})`;
     } else {
