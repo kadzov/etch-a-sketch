@@ -1,6 +1,6 @@
 start();
 function start() {
-  const size = prompt('How many squares?');
+  let size = prompt('How many squares?');
   if (size > 100) {
     size = 100;
   }
