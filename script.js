@@ -10,10 +10,10 @@ function start() {
     const grid = document.createElement('div');
     main.appendChild(grid);
   }
-  main.addEventListener('mouseover', e => {
+  main.addEventListener('mouseover', (e) => {
     if (e.target.hasAttribute('style')) {
-      const value = e.target.getAttribute('style')
-        .match(/(?<=brightness\()\d\.?\d?/) - 0.1;
+      const value =
+        e.target.getAttribute('style').match(/(?<=brightness\()\d\.?\d?/) - 0.1;
       e.target.style.filter = `brightness(${value})`;
     } else {
       e.target.style.backgroundColor =
